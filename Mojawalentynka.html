@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojawalentynka</title>
+</head>
+
+<body style="background-color: #FFE9EF;">
+    
+    <div style="display: table-cell;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                width: 500px;
+                height: 500px;
+                margin-top: -250px;
+                margin-left: -250px;
+                background-color: pink;
+                color: #650015;
+                border-radius: 50px;
+                padding: 20px"
+                >
+   
+    <h1 style="text-align: center; vertical-align: middle;"><big>CZY BĘDZIESZ MOJĄ WALENTYNKĄ???</big></h1>
+    
+    <img src="https://media1.tenor.com/m/mxH1murk86EAAAAC/rocklee-wink.gif" style="left: 50%; top: 50%; margin-left: 25px; margin-top: -10px;
+                ; width: 450px; height: 300px;">
+    
+    
+
+    <a href="YES.html">
+        <img style="width: 120px; border-radius: 10px; margin-top: 1px; margin-left: 50px;"src="images/TAK.png">
+    </a>
+    
+    <div id="noButton" style="
+    position: absolute;
+    background-color: pink;
+    width: 120px;
+    border-radius: 10px;
+    left: 330px;
+    margin-top: -90px;
+    cursor: pointer;
+">
+    <img src="images/nie.png" style="width: 120px; border-radius: 10px;">
+</div>
+
+
+    </div>
+    <img style="position: absolute;
+                top: 100%;
+                left: 50%;
+                width: 500px;
+                height: 250px;
+                margin-top: -200px;
+                margin-left: -250px;" src="images/Subject.png">
+
+<script>
+const noButton = document.getElementById("noButton");
+
+
+noButton.addEventListener("mouseenter", () => {
+    const maxX = window.innerWidth - noButton.offsetWidth;
+    const maxY = window.innerHeight - noButton.offsetHeight;
+
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    noButton.style.left = randomX + "px";
+    noButton.style.top = randomY + "px";
+});
+
+
+noButton.addEventListener("click", () => {
+    noButton.style.display = "none";
+});
+</script>
+
+
+</body>
+</html>
